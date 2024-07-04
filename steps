@@ -1,0 +1,30 @@
+// create a folder 
+// npm init -y
+// npm i express mongoose nodemon cors dotenv 
+// express backend frameWork
+// mongoose mongoDb backGage
+// nodemon restart file with restarting 
+// dotenv crentials(important links like mogodb connection authrization auntetiation port )
+// cors connect with other pages 
+
+//in package json
+//  "server":"nodemon index.js"
+//  index folder is the key folder 
+
+ //create models folder   for creating a scheme (pattern)
+//  models for schema
+// const mongoose =require('mongoose');  import mongoose 
+// const {Schema}=mongoose; create a scheme in a data ilitration 
+
+// const SelectedSheme=new Schema({ // new schema for selected Scheme
+//     name:{type:String},
+//     email:{type:String},
+//     phone:{type:String}, //name and data type 
+//     address:{type:String},
+//     city:{type:String},
+//     state:{type:String},
+//     pincode:{type:String},
+
+// })
+
+// module.exports=mongoose.model('UserDetails',SelectedSheme) // exporting the modules to use anywhrwer within thin tha programe 
