@@ -63,8 +63,14 @@ exports.update = async (req, res, next) => {
 exports.Remove=async(req,res,next)=>{
     try{
         const {id}=req.params;
+        const Doc=await UserDetails.findByIdAndDelete(id)
+        if(!Doc){
+            return res.status(404).json({message:"User not found" })
+        }
+        return res.json({mesage:"Delted Succesfully",data:Doc})
+
         
     }catch(err){
-        return res.status(500).json({command:"Error in Remove",message:err});
+        return res.status(500).json({message:err});
     }
 }
